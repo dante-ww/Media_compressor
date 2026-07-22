@@ -1,0 +1,8 @@
+# folders of compilation
+bin/
+obj/
+
+# settings of user
+*.csproj.user
+.vs/
+.vscode/
