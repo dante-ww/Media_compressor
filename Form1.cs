@@ -57,6 +57,8 @@ public partial class Form1 : Form
         this.StartPosition = FormStartPosition.Manual;
         this.Left = (workArea.Width - this.Width) / 2;
         this.Top = workArea.Bottom;
+        this.MaximizeBox = false;
+        this.FormBorderStyle = FormBorderStyle.FixedSingle;
         finalYPosition = workArea.Bottom - this.Height - 30;
         animationTimer = new System.Windows.Forms.Timer();
         animationTimer.Interval = 10;
