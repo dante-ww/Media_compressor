@@ -15,7 +15,6 @@ namespace MediaCruncher;
 public partial class Form1 : Form
 {
     // =================================================================
-    // Lines 22 to 24
     // Configuration constants that define the target file size,
     // audio bitrate, and image quality for the process.
     // =================================================================
@@ -24,7 +23,6 @@ public partial class Form1 : Form
     private const long TARGET_JPEG_QUALITY = 75L;
 
     // =================================================================
-    // Lines 32 to 40
     // Declaration of UI controls, timers, and state variables
     // used to manage visual feedback, task cancellation, and
     // the PayPal support button.
@@ -40,7 +38,6 @@ public partial class Form1 : Form
     private CancellationTokenSource? cancellationTokenSource;
 
     // =================================================================
-    // Lines 48 to 137
     // Form constructor. Initializes the UI components, calculates
     // startup coordinates, wires up drag-and-drop events, and
     // configures the cancel and PayPal donation buttons.
@@ -139,7 +136,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 144 to 159
     // Asynchronously downloads the PayPal icon from the web,
     // bypassing server restrictions by spoofing a browser user-agent.
     // =================================================================
@@ -161,7 +157,6 @@ public partial class Form1 : Form
     }
 
     /// =================================================================
-    // Lines 167 to 189
     // Click event handlers for the cancel and donate buttons.
     // Safely requests task cancellation or opens the PayPal
     // support link in the user's default web browser.
@@ -191,7 +186,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 197 to 226
     // Asynchronous method to initialize FFmpeg. It downloads
     // the executables on first use if missing, sets up the UI, 
     // and displays user-friendly error alerts if the download fails.
@@ -228,7 +222,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 235 to 282
     // UI Interaction and Visual Feedback Handlers.
     // Manages the smooth startup popup animation, dynamically updates
     // the animated GIF background based on the application state, and 
@@ -284,7 +277,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 291 to 392
     // Main drag-and-drop logic. Sets up the cancellation token,
     // updates the UI, loops through dropped files, and triggers the
     // appropriate compression tasks. Also handles user-friendly
@@ -394,7 +386,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 402 to 509
     // Core Media Processing and File Management Engines.
     // Handles the generation of unique filenames to prevent overwrites,
     // and executes the heavy compression tasks for both videos and images.
@@ -511,7 +502,6 @@ public partial class Form1 : Form
     }
 
     // =================================================================
-    // Lines 518 to 578
     // Image Processing Helpers & Custom UI Controls.
     // Contains the codec retrieval method required for image encoding,
     // followed by the definition of the GlowingButton class, a custom
@@ -580,7 +570,6 @@ public class GlowingButton : Button
 }
 
 // =================================================================
-// Lines 587 to 714
 // Custom Styled UI Controls.
 // Contains the definitions for aesthetically enhanced UI elements:
 // a TextLabel that draws a readable black border around text, and a
@@ -716,7 +705,6 @@ public class RoundedProgressBar : Control
 }
 
 // =================================================================
-// Lines 722 to 771
 // Custom alert dialog window used to display errors or
 // success messages. Dynamically resizes itself to a compact
 // layout when no animated image is provided.
